@@ -100,7 +100,7 @@ We write down the kinematic factors $\eta_{i}$ with the corresponding lepton ten
     \item $\displaystyle \eta_{\gamma Z} = \Big( \frac{G_{F}M_{Z}^2}{2\sqrt{2} \pi \alpha} \Big) \Big( \frac{Q^2}{Q^2 + M_{Z}^2} \Big)$ and $L_{\mu\nu}^{\gamma Z} = (g_{V}^{\ell} - \lambda g_{A}^{\ell})L_{\mu\nu}^{\gamma}$
     \item $\eta_{Z} = \eta_{\gamma Z}^2$ and $L_{\mu\nu}^{Z} = (g_{V}^{\ell} - \lambda g_{A}^{\ell})^2 L_{\mu\nu}^{\gamma}$
 \end{itemize}
-Note that $g_{V}^{\ell} = {\color{red} \bm ?}$ and $g_{A}^{\ell} = {\color{red} \bm ?}$ are the vector and axial weak couplings for lepton $\ell$, respectively, and $\lambda_{\ell}$ is the helicity of the lepton (assuming longitudinal polarization).
+Note that $\displaystyle g_{V}^{\ell} = g_{A}^{\ell} - 2 Q_{\ell} \sin^2{\theta_{W}}$ and $\displaystyle g_{A}^{\ell} = \frac{1}{2} \frac{Q_{\ell}}{|Q_{\ell}|}$ are the vector and axial weak couplings ($\theta_{W}$ is the weak mixing angle) for lepton $\ell$ (with charge $Q_{\ell}$), respectively, and $\lambda_{\ell}$ is the helicity of the lepton (assuming longitudinal polarization).
 Finally, we write down the definition of the hadronic tensor as
 \begin{subequations}
     \label{eq:hadron-tensor-def}
@@ -143,7 +143,7 @@ Therefore, the unpolarized cross section is given by
 \label{eq:upol-xsec}
 \begin{aligned}    
     \frac{\diff \sigma_{U}}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} + \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{U,i} \\
-                                                &= \frac{4 \pi \alpha^2}{x y Q^2} \Bigg[ xy^2 F_{1}^{\rm NC}(x,Q^2) \Bigg( 1 - y - \frac{x^2 y^2 M^2}{Q^2} \Bigg) F_{2}^{\rm NC}(x,Q^2) {\color{red} - \lambda_{\ell} x \Bigg( y - \frac{y^2}{2} \Bigg)} F_{3}^{\rm NC}(x,Q^2) \Bigg]
+                                                &= \frac{4 \pi \alpha^2}{x y Q^2} \Bigg[ xy^2 F_{1}^{\rm NC}(x,Q^2) \Bigg( 1 - y - \frac{x^2 y^2 M^2}{Q^2} \Bigg) F_{2}^{\rm NC}(x,Q^2) + \lambda_{\ell} x \Bigg( y - \frac{y^2}{2} \Bigg) F_{3}^{\rm NC}(x,Q^2) \Bigg]
 .\end{aligned}
 \end{eqnarray}
 where $W^{\mu\nu}_{U} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) + W^{\mu\nu}(P,q,-S) ]$ and 
@@ -162,12 +162,17 @@ where $W^{\mu\nu}_{U} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) + W^{\mu\nu}(P,q,-S) ]$ 
     F_{3}^{\rm NC}
 .\end{eqnarray}
 \end{subequations}
-Finally, the polarized cross section is given by ({\color{red} This equation needs to be updated once it is derived/verified})
+Finally, the polarized cross section is given by 
 \begin{eqnarray}
     \label{eq:pol-xsec}
-    \frac{\diff \sigma_{U}}{\diff x \, \diff y} = \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} - \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{P,i}
-,\end{eqnarray}
-where $W^{\mu\nu}_{P} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) - W^{\mu\nu}(P,q,-S) ]$.
+    \begin{aligned}    
+        \frac{\diff \sigma_{P}}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} - \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{P,i} \\
+        &= \frac{8 \pi \alpha^2}{x y Q^2} \Bigg[ -\lambda_{\ell} xy \Bigg( 2 - y - 2x^2y^2 \frac{M^2}{Q^2} \Bigg) g_1^{\rm NC} + 4 \lambda_{\ell} x^3 y^2 \frac{M^2}{Q^2} g_2^{\rm NC} \\
+        &+ 2x^2y \frac{M^2}{Q^2} \Bigg( 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg) g_3^{\rm NC} \\
+        &- \Bigg( 1 + 2x^2y \frac{M^2}{Q^2} \Bigg) \Bigg( \Bigg[ 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg] g_4^{\rm NC} \Bigg) xy^2 g_5^{\rm NC} \Bigg]
+    ,\end{aligned}
+\end{eqnarray}
+where $W^{\mu\nu}_{P} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) - W^{\mu\nu}(P,q,-S) ]$ and $g^{\rm NC}_{j}$ are defined similarly as for the unpolarized neutral current structure functions in \eref{NC-upol-structure-funcs}.
 Finally, before moving on, we define
 \begin{eqnarray}
     \label{eq:ratio}
