@@ -142,34 +142,23 @@ Therefore, the unpolarized cross section is given by
 \begin{eqnarray}
 \label{eq:upol-xsec}
 \begin{aligned}    
-    \frac{\diff \sigma_{U}}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} + \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{U,i} \\
+    \frac{\diff \sigma}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},-S)}{\diff x \, \diff y} + \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{U,i} \\
                                                 &= \frac{4 \pi \alpha^2}{x y Q^2} \Bigg[ xy^2 F_{1}^{\rm NC}(x,Q^2) \Bigg( 1 - y - \frac{x^2 y^2 M^2}{Q^2} \Bigg) F_{2}^{\rm NC}(x,Q^2) + \lambda_{\ell} x \Bigg( y - \frac{y^2}{2} \Bigg) F_{3}^{\rm NC}(x,Q^2) \Bigg]
 .\end{aligned}
 \end{eqnarray}
 where $W^{\mu\nu}_{U} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) + W^{\mu\nu}(P,q,-S) ]$ and 
-\begin{subequations}    
+\begin{eqnarray}
 \label{eq:NC-upol-structure-funcs}
-\begin{eqnarray}
-    \label{F1-NC}
-    F_{1}^{\rm NC} = 
-,\end{eqnarray}
-\begin{eqnarray}
-    \label{eq:F2-NC}
-    F_{2}^{\rm NC} = 
-,\end{eqnarray}
-\begin{eqnarray}
-    \label{eq:F3-NC}
-    F_{3}^{\rm NC}
+    F_{j}^{\rm NC} = F_{j}^{\gamma} - \eta_{\gamma Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell}) F_{j}^{\gamma Z} + \eta_{Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell})^2 F_{j}^{Z}
 .\end{eqnarray}
-\end{subequations}
-Finally, the polarized cross section is given by 
+Finally, the polarized cross section is given by\footnote{We assume longitudinal polarization such that $S^{\mu} = M(0,0,0,\lambda_{n})$, where $\lambda_{n}$ is the nucleon's helicity, in the proton's rest frame, which gives $S \cdot \ell = - \lambda_{n} M E$ and $S \cdot \ell' = -\lambda_{n} M E' \cos{\theta}$, where $\theta$ is the angle of deflection of the lepton. Note that $E = Q^2/[2Mxy]$, $E' = E(1-y)$, and $\cos{\theta} = 1 - Q^2/[2E^2(1-y)]$}
 \begin{eqnarray}
     \label{eq:pol-xsec}
     \begin{aligned}    
-        \frac{\diff \sigma_{P}}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} - \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{P,i} \\
+        \frac{\diff \Delta \sigma}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},-S)}{\diff x \, \diff y} - \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{P,i} \\
         &= \frac{8 \pi \alpha^2}{x y Q^2} \Bigg[ -\lambda_{\ell} xy \Bigg( 2 - y - 2x^2y^2 \frac{M^2}{Q^2} \Bigg) g_1^{\rm NC} + 4 \lambda_{\ell} x^3 y^2 \frac{M^2}{Q^2} g_2^{\rm NC} \\
         &+ 2x^2y \frac{M^2}{Q^2} \Bigg( 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg) g_3^{\rm NC} \\
-        &- \Bigg( 1 + 2x^2y \frac{M^2}{Q^2} \Bigg) \Bigg( \Bigg[ 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg] g_4^{\rm NC} \Bigg) xy^2 g_5^{\rm NC} \Bigg]
+        &- \Bigg( 1 + 2x^2y \frac{M^2}{Q^2} \Bigg) \Bigg( \Bigg[ 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg] g_4^{\rm NC} \Bigg) + xy^2 g_5^{\rm NC} \Bigg]
     ,\end{aligned}
 \end{eqnarray}
 where $W^{\mu\nu}_{P} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) - W^{\mu\nu}(P,q,-S) ]$ and $g^{\rm NC}_{j}$ are defined similarly as for the unpolarized neutral current structure functions in \eref{NC-upol-structure-funcs}.
@@ -234,9 +223,9 @@ In this work, we compute the partonic tensor at leading order, where the leading
 For the above tensors, note that
 \begin{eqnarray}
     \label{eq:momentum-delta-func}
-    \int \diff \Pi = \int \frac{\diff^3 {\bm p'}}{(2\pi)^3 2p'^{0}} \delta^{(3)}(p + q - p') = \int \diff^{4} p' \delta^{(4)}(p+q-p') \delta_{+}([p+q-p']^2)
-\end{eqnarray}
-and
+    \int \diff \Pi = \int \frac{\diff^3 {\bm p'}}{(2\pi)^3 2p'^{0}} \delta^{(3)}(p + q - p') = \int \diff^{4} p' \delta^{(4)}(p+q-p') \delta_{+}(p'^2)
+,\end{eqnarray}
+where $\displaystyle \delta_{+}(p'^2) = \delta_{+}([p+q]^2) = \frac{x}{Q^2}\delta(\xi - x)$ is the on-shell condition for the scattered parton, and\footnote{Recall the dirac adjoint: $\overline{\psi} = \psi^{\dagger} \gamma^{0}$}
 \begin{eqnarray}
     \label{eq:generic-tensor-structure}
     \begin{aligned} 
@@ -246,22 +235,21 @@ and
                   &= 2 ( a_1 a_2 + v_1v_2 )[ 2 p^{\mu}p^{\nu} + p^{\mu}q^{\nu} + q^{\mu}p^{\nu}  - g^{\mu\nu} p \cdot q ] \\
                   &- 2 a_1v_2 [ 2s^{\mu}p^{\nu} - g^{\mu\nu} s \cdot q ] - 2 a_2v_1 [ 2p^{\mu}s^{\nu} - g^{\mu\nu} s \cdot q ] - 2 ( a_1v_2 + a_2v_1 ) [ s^{\mu}q^{\nu} + q^{\mu}s^{\nu} ] \\
                   &+ 2i\epsilon^{\mu\nu\alpha\beta} [ ( a_1v_2 + a_2v_1 ) p_{\alpha}q_{\beta} - 2 a_1a_2 s_{\alpha}p_{\beta} - ( a_1a_2 + v_1v_2 ) s_{\alpha}q_{\beta} ]
-    \end{aligned}
+    .\end{aligned}
 \end{eqnarray}
-
 
 \begin{figure}[h!tb]
 \begin{center} 
-    %\includegraphics[width=]{}
-    \caption{Generic feynman diagram for virtual compton scattering of partons from the exchanged photon in the DIS process. Note that the grey blob represents all the possible graphs that can be drawn, which contribute to the scattering process.}
+    \includegraphics[width=0.4\paperwidth]{DIS_parton_model.pdf}
+    \caption{Generic feynman diagram for virtual compton scattering of partons from the exchanged photon in the DIS process. Note that the blue blob represents all the possible hard scattering (virtual compton scattering) diagrams that can be drawn, which contribute to the scattering process, and the red blob represents the soft part of the collinear factorization, which is captured by the PDFs.}
     \label{fig:virtual-compton-scattering}
 \end{center}
 \end{figure}
 
 \begin{figure}[h!tb]
 \begin{center} 
-    %\includegraphics[width=]{}
-    \caption{Leading order virtual compton scattering feynman diagram.}
+    \includegraphics[width=0.2\paperwidth]{DIS_LO.pdf}
+    \caption{Leading order virtual compton scattering feynman diagram for the hard scattering part of \fref{virtual-compton-scattering}: $\gamma^{*}q \rightarrow q$.}
     \label{fig:virtual-compton-scattering-LO}
 \end{center}
 \end{figure}
@@ -269,6 +257,10 @@ and
 
 \subsection{Determination of the hadronic structure functions}
 \label{ss:determination-of-the-hadronic-structure-functions}
+
+
+
+
 
 
 

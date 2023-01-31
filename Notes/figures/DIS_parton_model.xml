@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="17.0.1" class="java.beans.XMLDecoder">
+<java version="11.0.17" class="java.beans.XMLDecoder">
  <object class="net.sf.jaxodraw.graph.JaxoSaveGraph" id="JaxoSaveGraph0">
   <void property="jaxoDrawVersion">
    <string>2.1-0</string>
   </void>
   <void property="objectList">
    <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine0">
+    <object class="net.sf.jaxodraw.object.line.JaxoPLine" id="JaxoPLine0">
      <void property="DLSeparation">
       <float>2.0</float>
      </void>
      <void property="amp">
       <int>15</int>
      </void>
-     <void property="arrowPosition">
-      <float>0.5</float>
-     </void>
      <void id="JaxoDefaultArrow0" property="arrow">
       <void id="Color0" property="color"/>
-      <void id="Boolean0" method="isFilled"/>
      </void>
      <void property="color">
       <object idref="Color0"/>
-     </void>
-     <void property="paintArrow">
-      <object idref="Boolean0"/>
      </void>
      <void id="PointArray0" property="points">
       <void id="Point0" index="0">
@@ -32,14 +25,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point0"/>
-         <int>110</int>
+         <int>120</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point0"/>
-         <int>90</int>
+         <int>160</int>
         </void>
        </void>
       </void>
@@ -55,13 +48,131 @@
         <string>y</string>
         <void method="set">
          <object idref="Point1"/>
-         <int>150</int>
+         <int>230</int>
         </void>
        </void>
       </void>
      </void>
      <void property="points">
       <object idref="PointArray0"/>
+     </void>
+     <void property="strokeWidth">
+      <float>1.0</float>
+     </void>
+     <void property="wiggles">
+      <int>5</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="net.sf.jaxodraw.object.line.JaxoPLine" id="JaxoPLine1">
+     <void property="DLSeparation">
+      <float>2.0</float>
+     </void>
+     <void property="amp">
+      <int>15</int>
+     </void>
+     <void property="color">
+      <object idref="Color0"/>
+     </void>
+     <void id="PointArray1" property="points">
+      <void id="Point2" index="0">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point2"/>
+         <int>400</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2"/>
+         <int>160</int>
+        </void>
+       </void>
+      </void>
+      <void id="Point3" index="1">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point3"/>
+         <int>340</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point3"/>
+         <int>230</int>
+        </void>
+       </void>
+      </void>
+     </void>
+     <void property="points">
+      <object idref="PointArray1"/>
+     </void>
+     <void property="strokeWidth">
+      <float>1.0</float>
+     </void>
+     <void property="wiggles">
+      <int>5</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine0">
+     <void property="DLSeparation">
+      <float>2.0</float>
+     </void>
+     <void property="amp">
+      <int>15</int>
+     </void>
+     <void property="arrowPosition">
+      <float>0.5</float>
+     </void>
+     <void property="color">
+      <object idref="Color0"/>
+     </void>
+     <void property="paintArrow">
+      <boolean>true</boolean>
+     </void>
+     <void id="PointArray2" property="points">
+      <void id="Point4" index="0">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point4"/>
+         <int>120</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point4"/>
+         <int>300</int>
+        </void>
+       </void>
+      </void>
+      <void id="Point5" index="1">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point5"/>
+         <int>180</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point5"/>
+         <int>230</int>
+        </void>
+       </void>
+      </void>
+     </void>
+     <void property="points">
+      <object idref="PointArray2"/>
      </void>
      <void property="strokeWidth">
       <float>1.0</float>
@@ -83,119 +194,7 @@
       <object idref="Color0"/>
      </void>
      <void property="paintArrow">
-      <object idref="Boolean0"/>
-     </void>
-     <void id="PointArray1" property="points">
-      <void id="Point2" index="0">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point2"/>
-         <int>180</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point2"/>
-         <int>150</int>
-        </void>
-       </void>
-      </void>
-      <void id="Point3" index="1">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point3"/>
-         <int>340</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point3"/>
-         <int>150</int>
-        </void>
-       </void>
-      </void>
-     </void>
-     <void property="points">
-      <object idref="PointArray1"/>
-     </void>
-     <void property="strokeWidth">
-      <float>1.0</float>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine2">
-     <void property="DLSeparation">
-      <float>2.0</float>
-     </void>
-     <void property="amp">
-      <int>15</int>
-     </void>
-     <void property="arrowPosition">
-      <float>0.5</float>
-     </void>
-     <void property="color">
-      <object idref="Color0"/>
-     </void>
-     <void property="paintArrow">
-      <object idref="Boolean0"/>
-     </void>
-     <void id="PointArray2" property="points">
-      <void id="Point4" index="0">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point4"/>
-         <int>340</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point4"/>
-         <int>150</int>
-        </void>
-       </void>
-      </void>
-      <void id="Point5" index="1">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point5"/>
-         <int>410</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point5"/>
-         <int>90</int>
-        </void>
-       </void>
-      </void>
-     </void>
-     <void property="points">
-      <object idref="PointArray2"/>
-     </void>
-     <void property="strokeWidth">
-      <float>1.0</float>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoPLine" id="JaxoPLine0">
-     <void property="DLSeparation">
-      <float>2.0</float>
-     </void>
-     <void property="amp">
-      <int>15</int>
-     </void>
-     <void property="color">
-      <object idref="Color0"/>
+      <boolean>true</boolean>
      </void>
      <void id="PointArray3" property="points">
       <void id="Point6" index="0">
@@ -203,14 +202,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point6"/>
-         <int>180</int>
+         <int>340</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point6"/>
-         <int>150</int>
+         <int>230</int>
         </void>
        </void>
       </void>
@@ -219,14 +218,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point7"/>
-         <int>180</int>
+         <int>400</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point7"/>
-         <int>230</int>
+         <int>300</int>
         </void>
        </void>
       </void>
@@ -237,21 +236,35 @@
      <void property="strokeWidth">
       <float>1.0</float>
      </void>
-     <void property="wiggles">
-      <int>4</int>
-     </void>
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoPLine" id="JaxoPLine1">
+    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine2">
      <void property="DLSeparation">
-      <float>2.0</float>
+      <float>3.0</float>
      </void>
      <void property="amp">
       <int>15</int>
      </void>
+     <void property="arrow">
+      <void property="arrowLength">
+       <float>5.795455</float>
+      </void>
+      <void property="arrowWidth">
+       <float>2.318182</float>
+      </void>
+     </void>
+     <void property="arrowPosition">
+      <float>0.5</float>
+     </void>
      <void property="color">
       <object idref="Color0"/>
+     </void>
+     <void property="doubleLine">
+      <boolean>true</boolean>
+     </void>
+     <void property="paintArrow">
+      <boolean>true</boolean>
      </void>
      <void id="PointArray4" property="points">
       <void id="Point8" index="0">
@@ -259,14 +272,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point8"/>
-         <int>340</int>
+         <int>60</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point8"/>
-         <int>150</int>
+         <int>300</int>
         </void>
        </void>
       </void>
@@ -275,14 +288,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point9"/>
-         <int>340</int>
+         <int>120</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point9"/>
-         <int>230</int>
+         <int>300</int>
         </void>
        </void>
       </void>
@@ -293,27 +306,20 @@
      <void property="strokeWidth">
       <float>1.0</float>
      </void>
-     <void property="wiggles">
-      <int>4</int>
-     </void>
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine3">
-     <void property="DLSeparation">
-      <float>2.0</float>
-     </void>
-     <void property="amp">
-      <int>15</int>
-     </void>
-     <void property="arrowPosition">
-      <float>0.5</float>
-     </void>
+    <object class="net.sf.jaxodraw.object.fill.JaxoBlob" id="JaxoBlob0">
      <void property="color">
       <object idref="Color0"/>
      </void>
-     <void property="paintArrow">
-      <object idref="Boolean0"/>
+     <void property="fillColor">
+      <object class="java.awt.Color">
+       <int>0</int>
+       <int>153</int>
+       <int>255</int>
+       <int>255</int>
+      </object>
      </void>
      <void id="PointArray5" property="points">
       <void id="Point10" index="0">
@@ -321,14 +327,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point10"/>
-         <int>120</int>
+         <int>260</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point10"/>
-         <int>300</int>
+         <int>230</int>
         </void>
        </void>
       </void>
@@ -337,14 +343,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point11"/>
-         <int>180</int>
+         <int>350</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point11"/>
-         <int>230</int>
+         <int>210</int>
         </void>
        </void>
       </void>
@@ -358,12 +364,20 @@
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine4">
+    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine3">
      <void property="DLSeparation">
-      <float>2.0</float>
+      <float>3.0</float>
      </void>
      <void property="amp">
       <int>15</int>
+     </void>
+     <void property="arrow">
+      <void property="arrowLength">
+       <float>5.795455</float>
+      </void>
+      <void property="arrowWidth">
+       <float>2.318182</float>
+      </void>
      </void>
      <void property="arrowPosition">
       <float>0.5</float>
@@ -371,8 +385,11 @@
      <void property="color">
       <object idref="Color0"/>
      </void>
+     <void property="doubleLine">
+      <boolean>true</boolean>
+     </void>
      <void property="paintArrow">
-      <object idref="Boolean0"/>
+      <boolean>true</boolean>
      </void>
      <void id="PointArray6" property="points">
       <void id="Point12" index="0">
@@ -380,14 +397,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point12"/>
-         <int>340</int>
+         <int>400</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point12"/>
-         <int>230</int>
+         <int>300</int>
         </void>
        </void>
       </void>
@@ -396,7 +413,7 @@
         <string>x</string>
         <void method="set">
          <object idref="Point13"/>
-         <int>400</int>
+         <int>460</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
@@ -417,21 +434,17 @@
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine5">
-     <void property="DLSeparation">
-      <float>2.0</float>
-     </void>
-     <void property="amp">
-      <int>15</int>
-     </void>
-     <void property="arrowPosition">
-      <float>0.5</float>
-     </void>
+    <object class="net.sf.jaxodraw.object.fill.JaxoBlob" id="JaxoBlob1">
      <void property="color">
       <object idref="Color0"/>
      </void>
-     <void property="paintArrow">
-      <object idref="Boolean0"/>
+     <void property="fillColor">
+      <object class="java.awt.Color">
+       <int>255</int>
+       <int>51</int>
+       <int>51</int>
+       <int>255</int>
+      </object>
      </void>
      <void id="PointArray7" property="points">
       <void id="Point14" index="0">
@@ -439,7 +452,7 @@
         <string>x</string>
         <void method="set">
          <object idref="Point14"/>
-         <int>60</int>
+         <int>260</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
@@ -455,14 +468,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point15"/>
-         <int>120</int>
+         <int>410</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point15"/>
-         <int>300</int>
+         <int>280</int>
         </void>
        </void>
       </void>
@@ -476,17 +489,21 @@
     </object>
    </void>
    <void method="add">
-    <object class="net.sf.jaxodraw.object.fill.JaxoBlob" id="JaxoBlob0">
-     <void property="color">
-      <object idref="Color0"/>
+    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine4">
+     <void property="DLSeparation">
+      <float>2.0</float>
      </void>
-     <void property="fillColor">
-      <object class="java.awt.Color" id="Color1">
-       <int>225</int>
-       <int>225</int>
-       <int>225</int>
-       <int>255</int>
-      </object>
+     <void property="amp">
+      <int>15</int>
+     </void>
+     <void property="arrowPosition">
+      <float>0.5</float>
+     </void>
+     <void id="JaxoDefaultArrow1" property="arrow">
+      <void id="Color1" property="color"/>
+     </void>
+     <void property="color">
+      <object idref="Color1"/>
      </void>
      <void id="PointArray8" property="points">
       <void id="Point16" index="0">
@@ -501,7 +518,7 @@
         <string>y</string>
         <void method="set">
          <object idref="Point16"/>
-         <int>230</int>
+         <int>160</int>
         </void>
        </void>
       </void>
@@ -510,20 +527,76 @@
         <string>x</string>
         <void method="set">
          <object idref="Point17"/>
-         <int>350</int>
+         <int>310</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point17"/>
-         <int>210</int>
+         <int>120</int>
         </void>
        </void>
       </void>
      </void>
      <void property="points">
       <object idref="PointArray8"/>
+     </void>
+     <void property="strokeWidth">
+      <float>1.0</float>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="net.sf.jaxodraw.object.line.JaxoFLine" id="JaxoFLine5">
+     <void property="DLSeparation">
+      <float>2.0</float>
+     </void>
+     <void property="amp">
+      <int>15</int>
+     </void>
+     <void property="arrowPosition">
+      <float>0.5</float>
+     </void>
+     <void property="color">
+      <object idref="Color1"/>
+     </void>
+     <void id="PointArray9" property="points">
+      <void id="Point18" index="0">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point18"/>
+         <int>260</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point18"/>
+         <int>160</int>
+        </void>
+       </void>
+      </void>
+      <void id="Point19" index="1">
+       <void class="java.awt.Point" method="getField">
+        <string>x</string>
+        <void method="set">
+         <object idref="Point19"/>
+         <int>260</int>
+        </void>
+       </void>
+       <void class="java.awt.Point" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point19"/>
+         <int>340</int>
+        </void>
+       </void>
+      </void>
+     </void>
+     <void property="points">
+      <object idref="PointArray9"/>
      </void>
      <void property="strokeWidth">
       <float>1.0</float>
@@ -542,59 +615,6 @@
       <float>0.5</float>
      </void>
      <void property="color">
-      <object idref="Color0"/>
-     </void>
-     <void property="paintArrow">
-      <object idref="Boolean0"/>
-     </void>
-     <void id="PointArray9" property="points">
-      <void id="Point18" index="0">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point18"/>
-         <int>400</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point18"/>
-         <int>300</int>
-        </void>
-       </void>
-      </void>
-      <void id="Point19" index="1">
-       <void class="java.awt.Point" method="getField">
-        <string>x</string>
-        <void method="set">
-         <object idref="Point19"/>
-         <int>460</int>
-        </void>
-       </void>
-       <void class="java.awt.Point" method="getField">
-        <string>y</string>
-        <void method="set">
-         <object idref="Point19"/>
-         <int>300</int>
-        </void>
-       </void>
-      </void>
-     </void>
-     <void property="points">
-      <object idref="PointArray9"/>
-     </void>
-     <void property="strokeWidth">
-      <float>1.0</float>
-     </void>
-    </object>
-   </void>
-   <void method="add">
-    <object class="net.sf.jaxodraw.object.fill.JaxoBlob" id="JaxoBlob1">
-     <void property="color">
-      <object idref="Color0"/>
-     </void>
-     <void property="fillColor">
       <object idref="Color1"/>
      </void>
      <void id="PointArray10" property="points">
@@ -603,14 +623,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point20"/>
-         <int>260</int>
+         <int>210</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point20"/>
-         <int>300</int>
+         <int>380</int>
         </void>
        </void>
       </void>
@@ -619,14 +639,14 @@
         <string>x</string>
         <void method="set">
          <object idref="Point21"/>
-         <int>410</int>
+         <int>260</int>
         </void>
        </void>
        <void class="java.awt.Point" method="getField">
         <string>y</string>
         <void method="set">
          <object idref="Point21"/>
-         <int>280</int>
+         <int>340</int>
         </void>
        </void>
       </void>
