@@ -10,6 +10,7 @@
 \usepackage{physics}
 
 \newcommand{\diff}[1]{{\rm d} #1}
+\newcommand{\APV}{A_{\rm PV}}
 
 % float packages
 \usepackage{graphicx}
@@ -135,8 +136,8 @@ Now, we can change variables from $(E',\Omega)$ to $(x,y)$, which gives us the c
     \frac{\diff \sigma}{\diff x \, \diff y} = \frac{Q^2}{x} \frac{\pi}{E'} \frac{\diff \sigma}{\diff E' \, \diff \Omega} = \frac{2 \pi \alpha^2 y}{Q^4} \sum_{i} \eta_{i} L_{\mu\nu}^{i}W_{i}^{\mu\nu}
 ,\end{eqnarray}
 where we have used the relation $e^2 = 4\pi\alpha$.
-Note that $\diff \sigma = \diff \sigma(\lambda_{\ell}, S)$ depends on the helicity of the electron (in the initial state) and spin of the nucleon.
-We can therefore define cross sections that depend on exclusively on the spin of either the electron or the nucleon.
+Note that $\diff \sigma = \diff \sigma(\lambda_{\ell}, S)$ depends on the helicity of the lepton (in the initial state) and spin of the nucleon.
+We can therefore define cross sections that depend on exclusively on the spin of either the lepton or the nucleon.
 When we refer to the polarization of a cross section, we explicitly refer to the polarization of the nucleon.
 Therefore, the unpolarized cross section is given by
 \begin{eqnarray}
@@ -258,6 +259,73 @@ where $\displaystyle \delta_{+}(p'^2) = \delta_{+}([p+q]^2) = \frac{x}{Q^2}\delt
 \subsection{Determination of the hadronic structure functions}
 \label{ss:determination-of-the-hadronic-structure-functions}
 
+From the last section, we have the form of the electromagnetic, weak, and interference partonic tensors, and the connection between the hadronic and partonic tensors is captured in \eref{factorizations}.
+The structure functions enter at the hadronic level as shown in \eref{hadron-tensor-def}.
+Generically, we can express this form as a linear combination of structure functions\footnote{The argument is given here for the unpolarized and can be repeated for the polarized sector.}
+\begin{eqnarray}
+    \label{eq:hadronic-tensor-generic}
+    W^{\mu\nu}_{U} = \sum_{j} a_{j}^{\mu\nu} F_{j}
+.\end{eqnarray}
+
+As with regular vectors, we can use 2nd-order projection tensors with the defining property that ${\cal P}_{\mu\nu}^{k} W^{\mu\nu}_{U} = F_{k}$.
+For the unpolarized projectors, we can write a general projector as
+\begin{eqnarray}
+    \label{eq:general-projector}
+    {\cal P}^{k}_{\mu\nu} = c_{g}^{k} {\cal P}^{g}_{\mu\nu} + c_{PP}^{k} {\cal P}^{PP}_{\mu\nu} + c_{\epsilon Pq}^{k} {\cal P}^{\epsilon Pq}_{\mu\nu}
+,\end{eqnarray}
+where ${\cal P}_{g}^{\mu\nu} = g^{\mu\nu}$, ${\cal P}_{PP}^{\mu\nu} = P^{\mu}P^{\nu}$, and ${\cal P}_{\epsilon Pq} = i \epsilon^{\mu\nu\alpha\beta}P_{\alpha}q_{\beta}$.
+It is clear then from this setup that we can solve for the coefficients $c^{k}_{g,PP,\epsilon Pq}$ by imposing ${\cal P}_{\mu\nu}^{k} a_{j}^{\mu\nu} = \delta_{jk}$.
+Doing so, gives the following projectors for the unpolarized structure functions
+\begin{subequations}    
+\label{eq:unpolarized-projectors}
+\begin{eqnarray}
+    {\cal P}_{1}^{\mu\nu} = -\frac{1}{2} {\cal P}_{g}^{\mu\nu} + \frac{2x^2}{4M^2x^2 + Q^2} {\cal P}_{PP}^{\mu\nu}
+\end{eqnarray}
+\begin{eqnarray}
+    {\cal P}_{2}^{\mu\nu} = -\frac{Q^2 x}{4M^2x^2 + Q^2} \Big[ {\cal P}_{g} - \frac{12 x^2}{4M^2x^2 + Q^2} {\cal P}_{PP}^{\mu\nu} \Big]
+\end{eqnarray}
+\begin{eqnarray}
+    \label{eq:label}
+    {\cal P}_{3}^{\mu\nu} = -\frac{2x}{4M^2x^2 + Q^2} {\cal P}_{\epsilon Pq}
+.\end{eqnarray}
+\end{subequations}
+
+For the calculations below, we will assume that $M^2 \ll Q^2$ such that the nucleon mass can be eglected.
+Using this fact, putting everything into the factorization, and extracting the structure functions using the projectors above, we find the leading order expressions for the unpolarized structure functions:
+\begin{align}
+\label{eq:unpolarized-LO-structure-functions}
+F_{1}^{[\gamma,\gamma Z,Z]}(x,Q^2) &= \frac{1}{2} \sum_{q} \Big[ e_{q}^2, \, 2e_{q}g_{V}^{q}, \, (g_{V}^{q})^2+(g_{A}^{q})^2 \Big] f_{q}^{+}(x,Q^2) \\
+F_{3}^{[\gamma,\gamma Z,Z]}(x,Q^2) &= \phantom{\frac{1}{2}} \sum_{q} \Big[ 0, \, 2e_{q}g_{A}^{q}, \, 2g_{V}^{q}g_{A}^{q} \Big] f_{q}^{-}(x,Q^2)
+,\end{align}
+where we have defined $f^{\pm}_{q} = f_{q} \pm f_{\bar{q}}$.
+Also, note that $F_{2} = 2xF_{1}$ (which is the Callan-Gross relation) and the sum over $q$ is a sum over quark flavors ($u,\, d, \, s, \, c, \, b$).\footnote{The top (anti-)quark does not contribute at the $\sqrt{s}$ we consider since it is so massive ($m_{t} \approx \SI{173}{\GeV}$)!.}
+
+\section{Parity-Violating Asymmetry}
+\label{sec:parity-violating-asymmetry}
+
+Now that we have the expressions for the hadronic cross sections and structure functions, we may write down and compute the parity violating asymmetry $\APV$ over a wide-range of kinematics.
+In particular, we are interested in the dependence of $\APV$ on the strange sea.
+Current experimental scattering data do not allow global QCD analyses to constrain the strange sea well, but because $\APV$ depends directly on combinations of the strange and anti-strange PDFs (as will be shown below), it may be possible that this asymmetry serves as a good candidate for data input to future global global QCD analyses.
+
+The conventional asymmetry is defined as the ratio below\footnote{We have defined $\diff \sigma_{\pm} = \diff \sigma(\lambda_{\ell} = \pm 1)$, where $\diff \sigma$ is the unpolarized cross section of \eref{upol-xsec}.}:
+\begin{eqnarray}
+    \label{eq:APV}
+    \APV = \frac{\diff \sigma_{+} - \diff \sigma_{-}}{\diff \sigma_{+} + \diff \sigma_{-}} = \frac{G_{F} Q^2}{8 \pi \alpha} \Big[ a_{1}Y_{1} + a_{3} Y_{3} \Big]
+,\end{eqnarray}
+where
+\begin{eqnarray}
+    \label{eq:a13}
+    a_{1} = 2 g_{A}^{\ell} \frac{F_{1}^{\gamma Z}}{F_{1}^{\gamma}} \, \mbox{ and } \, a_{3} = g_{V}^{\ell} \frac{F_{3}^{\gamma Z}}{F_{3}^{\gamma}}
+.\end{eqnarray}
+Additionally, the factors
+\begin{align}
+    \label{eq:Y13}
+    Y_{1} &= \Bigg( \frac{1 + R^{\gamma Z}}{1 + R^{\gamma}} \Bigg) \frac{1 + (1-y^2) - \frac{y^2}{2} \Big[ 1 + r^2 - \frac{2r^2}{1 + R^{\gamma Z}} \Big]}{1 + (1-y)^2 - \frac{y^2}{2}\Big[ 1 + r^2 - \frac{2r^2}{1 + R^{\gamma}} \Big]} \\
+    Y_{3} &= \Bigg( \frac{1 + R^{\gamma Z}}{1 + R^{\gamma}} \Bigg) \frac{1 - (1-y^2)}{1 + (1-y)^2 - \frac{y^2}{2}\Big[ 1 + r^2 - \frac{2r^2}{1 + R^{\gamma}} \Big]}
+.\end{align}
+In the leading order calculation we completed above, we had $F_2 = 2x F_1$, implying that $R = r^2 - 1$.
+This gives $Y_{1} = 1$ and $Y_{3} = [1 - (1-y)^2]/[1 + (1-y)^2]$.
+It should be noted that the expression recorded for $\APV$ in \eref{APV} is the leading-order term in the power series expansion of the general $\APV$ in $G_{F}/\alpha$ and $M_{Z} / Q$.
 
 
 

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1675192726 "main.aux" "main.bbl" "main" 1675275504
+["bibtex main"] 1675286996 "main.aux" "main.bbl" "main" 1675287964
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1675275504 4735 e6553240da1f4178feff4f59272238b5 "pdflatex"
-  "mainNotes.bib" 1675275504 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "main.aux" 1675287964 5389 df4d14c13580b221cdd7dd1a90b799ad "pdflatex"
+  "mainNotes.bib" 1675287964 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1675275504 "main.tex" "main.pdf" "main" 1675275504
+["pdflatex"] 1675287963 "main.tex" "main.pdf" "main" 1675287964
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -56,12 +56,14 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1248133631 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
@@ -152,10 +154,10 @@
   "figures/DIS_LO.pdf" 1675274968 4598 525faa40ce2c292bd361a24c35a98588 ""
   "figures/DIS_generic.pdf" 1675274968 6634 37f112609c0e27a80c2498c9ba669e07 ""
   "figures/DIS_parton_model.pdf" 1675274968 3527 fda0a4e5c2ad8584e065bca7030c96c9 ""
-  "main.aux" 1675275504 4735 e6553240da1f4178feff4f59272238b5 "pdflatex"
-  "main.bbl" 1675113326 1982 35453d3875d823f0ec9445e740a573d9 "bibtex main"
-  "main.out" 1675275504 1097 ab669007115d88c2e05c4ea62fe4d937 "pdflatex"
-  "main.tex" 1675275503 19456 accc8a88dc8024a55dad6fe1ca7ea765 ""
+  "main.aux" 1675287964 5389 df4d14c13580b221cdd7dd1a90b799ad "pdflatex"
+  "main.bbl" 1675286996 1982 35453d3875d823f0ec9445e740a573d9 "bibtex main"
+  "main.out" 1675287964 1284 f29665f0795d6748dcb2c1f1f76c53d5 "pdflatex"
+  "main.tex" 1675287963 24643 563b41ea28f92ac42e0c925f8515ed33 ""
   (generated)
   "main.aux"
   "main.log"
