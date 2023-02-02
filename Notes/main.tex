@@ -139,7 +139,7 @@ where we have used the relation $e^2 = 4\pi\alpha$.
 Note that $\diff \sigma = \diff \sigma(\lambda_{\ell}, S)$ depends on the helicity of the lepton (in the initial state) and spin of the nucleon.
 We can therefore define cross sections that depend on exclusively on the spin of either the lepton or the nucleon.
 When we refer to the polarization of a cross section, we explicitly refer to the polarization of the nucleon.
-Therefore, the unpolarized cross section is given by
+Therefore, the unpolarized cross section is given by\footnote{We note that $\epsilon_{\mu\nu\alpha\beta}\epsilon^{\mu\nu\rho\sigma} = -2 [ g_{\alpha}^{\rho}g_{\beta}^{\sigma} - g_{\alpha}^{\sigma}g_{\beta}^{\rho} ]$}
 \begin{eqnarray}
 \label{eq:upol-xsec}
 \begin{aligned}    
@@ -150,7 +150,7 @@ Therefore, the unpolarized cross section is given by
 where $W^{\mu\nu}_{U} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) + W^{\mu\nu}(P,q,-S) ]$ and 
 \begin{eqnarray}
 \label{eq:NC-upol-structure-funcs}
-    F_{j}^{\rm NC} = F_{j}^{\gamma} - \eta_{\gamma Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell}) F_{j}^{\gamma Z} + \eta_{Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell})^2 F_{j}^{Z}
+    F_{j}^{\rm NC} = F_{j}^{\gamma} + \eta_{\gamma Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell}) F_{j}^{\gamma Z} + \eta_{Z} (g_{V}^{\ell} - \lambda_{\ell} g_{A}^{\ell})^2 F_{j}^{Z}
 .\end{eqnarray}
 Finally, the polarized cross section is given by\footnote{We assume longitudinal polarization such that $S^{\mu} = M(0,0,0,\lambda_{n})$, where $\lambda_{n}$ is the nucleon's helicity, in the proton's rest frame, which gives $S \cdot \ell = - \lambda_{n} M E$ and $S \cdot \ell' = -\lambda_{n} M E' \cos{\theta}$, where $\theta$ is the angle of deflection of the lepton. Note that $E = Q^2/[2Mxy]$, $E' = E(1-y)$, and $\cos{\theta} = 1 - Q^2/[2E^2(1-y)]$}
 \begin{eqnarray}
@@ -159,7 +159,7 @@ Finally, the polarized cross section is given by\footnote{We assume longitudinal
         \frac{\diff \Delta \sigma}{\diff x \, \diff y} &= \frac{1}{2} \Bigg[ \frac{\diff \sigma(\lambda_{\ell},-S)}{\diff x \, \diff y} - \frac{\diff \sigma(\lambda_{\ell},S)}{\diff x \, \diff y} \Bigg] = \frac{2 \pi \alpha^2 y}{Q^{4}} \sum_{i} \eta_{i} L_{\mu\nu}^{i} W^{\mu\nu}_{P,i} \\
         &= \frac{8 \pi \alpha^2}{x y Q^2} \Bigg[ -\lambda_{\ell} xy \Bigg( 2 - y - 2x^2y^2 \frac{M^2}{Q^2} \Bigg) g_1^{\rm NC} + 4 \lambda_{\ell} x^3 y^2 \frac{M^2}{Q^2} g_2^{\rm NC} \\
         &+ 2x^2y \frac{M^2}{Q^2} \Bigg( 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg) g_3^{\rm NC} \\
-        &- \Bigg( 1 + 2x^2y \frac{M^2}{Q^2} \Bigg) \Bigg( \Bigg[ 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg] g_4^{\rm NC} \Bigg) + xy^2 g_5^{\rm NC} \Bigg]
+        &- \Bigg( 1 + 2x^2y \frac{M^2}{Q^2} \Bigg) \Bigg( \Bigg[ 1 - y - x^2y^2 \frac{M^2}{Q^2} \Bigg] g_4^{\rm NC} + xy^2 g_5^{\rm NC} \Bigg) \Bigg] 
     ,\end{aligned}
 \end{eqnarray}
 where $W^{\mu\nu}_{P} = \frac{1}{2} [ W^{\mu\nu}(P,q,S) - W^{\mu\nu}(P,q,-S) ]$ and $g^{\rm NC}_{j}$ are defined similarly as for the unpolarized neutral current structure functions in \eref{NC-upol-structure-funcs}.

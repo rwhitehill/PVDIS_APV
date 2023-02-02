@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1675286996 "main.aux" "main.bbl" "main" 1675310265
+["bibtex main"] 1675353504 "main.aux" "main.bbl" "main" 1675353833
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1675310265 5389 df4d14c13580b221cdd7dd1a90b799ad "pdflatex"
-  "mainNotes.bib" 1675310265 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "main.aux" 1675353833 5389 1fef0d24d18542841b6a8ce5e004eb15 "pdflatex"
+  "mainNotes.bib" 1675353833 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1675310264 "main.tex" "main.pdf" "main" 1675310265
+["pdflatex"] 1675353832 "main.tex" "main.pdf" "main" 1675353833
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -154,10 +154,10 @@
   "figures/DIS_LO.pdf" 1675274968 4598 525faa40ce2c292bd361a24c35a98588 ""
   "figures/DIS_generic.pdf" 1675274968 6634 37f112609c0e27a80c2498c9ba669e07 ""
   "figures/DIS_parton_model.pdf" 1675274968 3527 fda0a4e5c2ad8584e065bca7030c96c9 ""
-  "main.aux" 1675310265 5389 df4d14c13580b221cdd7dd1a90b799ad "pdflatex"
-  "main.bbl" 1675286996 1982 35453d3875d823f0ec9445e740a573d9 "bibtex main"
-  "main.out" 1675310265 1284 f29665f0795d6748dcb2c1f1f76c53d5 "pdflatex"
-  "main.tex" 1675310264 24631 5a8a6a04fa945e3482edb38984e3227a ""
+  "main.aux" 1675353833 5389 1fef0d24d18542841b6a8ce5e004eb15 "pdflatex"
+  "main.bbl" 1675353504 1982 35453d3875d823f0ec9445e740a573d9 "bibtex main"
+  "main.out" 1675353833 1284 f29665f0795d6748dcb2c1f1f76c53d5 "pdflatex"
+  "main.tex" 1675353832 24796 a2e380a3ae50e5258f00a575ca143a62 ""
   (generated)
   "main.aux"
   "main.log"
