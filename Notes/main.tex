@@ -209,23 +209,23 @@ In this work, we compute the partonic tensor at leading order, where the leading
 \begin{subequations}    
 \label{eq:partonic-tensor-LO}
 \begin{eqnarray}
-    \widehat{W}^{\mu\nu}_{\gamma} = \int \diff \Pi \, \Bigg\{ \sum_{s'} e_{q}^2 [ \bar{u}(p',s') \gamma^{\mu} u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} u(p,s) ] \Bigg\}
+    \widehat{W}^{\mu\nu}_{\gamma} = \frac{1}{4\pi} \int \diff \Pi \, \Bigg\{ \sum_{s'} e_{q}^2 [ \bar{u}(p',s') \gamma^{\mu} u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} u(p,s) ] \Bigg\}
 \end{eqnarray}
 \begin{eqnarray}
 \begin{aligned}
-    \widehat{W}^{\mu\nu}_{\gamma Z} = \int \diff \Pi \, \Bigg\{ \sum_{s'} e_{q} ( [ &\bar{u}(p',s') ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) \gamma^{\mu} u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} u(p,s) ]  \\
+    \widehat{W}^{\mu\nu}_{\gamma Z} = \frac{1}{4\pi} \int \diff \Pi \, \Bigg\{ \sum_{s'} e_{q} ( [ &\bar{u}(p',s') ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) \gamma^{\mu} u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} u(p,s) ]  \\
                                                                             &+ [ \bar{u}(p',s') \gamma^{\mu} u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) u(p,s) ] ) \Bigg\}
 \end{aligned}
 \end{eqnarray}
 \begin{eqnarray}
-    \widehat{W}^{\mu\nu}_{Z} = \int \diff \Pi \, \Bigg\{ \sum_{s'} [ \bar{u}(p',s') \gamma^{\mu} ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) u(p,s) ] \Bigg\}
+    \widehat{W}^{\mu\nu}_{Z} = \frac{1}{4\pi} \int \diff \Pi \, \Bigg\{ \sum_{s'} [ \bar{u}(p',s') \gamma^{\mu} ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) u(p,s) ]^{*}[ \bar{u}(p',s') \gamma^{\nu} ( g_{V}^{i} - g_{A}^{i} \gamma^{5} ) u(p,s) ] \Bigg\}
 .\end{eqnarray}
 Note that $e_{q}$ is the fractional charge of the quarks.
 \end{subequations}
 For the above tensors, note that
 \begin{eqnarray}
     \label{eq:momentum-delta-func}
-    \int \diff \Pi = \int \frac{\diff^3 {\bm p'}}{(2\pi)^3 2p'^{0}} \delta^{(3)}(p + q - p') = \int \diff^{4} p' \delta^{(4)}(p+q-p') \delta_{+}(p'^2)
+    \int \diff \Pi = \int \frac{\diff^3 {\bm p'}}{(2\pi)^3 2p'^{0}} (2\pi)^{4} \delta^{(3)}(p + q - p') = 2\pi \int \diff^{4} p' \delta^{(4)}(p+q-p') \delta_{+}(p'^2)
 ,\end{eqnarray}
 where $\displaystyle \delta_{+}(p'^2) = \delta_{+}([p+q]^2) = \frac{x}{Q^2}\delta(\xi - x)$ is the on-shell condition for the scattered parton, and\footnote{Recall the dirac adjoint: $\overline{\psi} = \psi^{\dagger} \gamma^{0}$}
 \begin{eqnarray}
